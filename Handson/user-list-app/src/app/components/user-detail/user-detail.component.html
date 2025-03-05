@@ -1,8 +1,0 @@
-<div class="user-card" [ngClass]="{'admin': user.isAdmin}">
-    <h3>{{ user.name }}</h3>
-    <p>Email: {{ user.email }}</p>
-    <p>Status: <span [ngStyle]="{ color: user.isAdmin ? 'red' : 'green' }">
-      {{ user.isAdmin ? 'Admin' : 'User' }}
-    </span></p>
-  </div>
-  
