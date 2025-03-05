@@ -1,0 +1,19 @@
+<div class="user-list-container">
+  <h2>User List</h2>
+
+  <!-- Data Binding Examples -->
+  <ul>
+    <li *ngFor="let user of users">
+      <strong>{{ user.name }}</strong> - {{ user.age }} years old - <i>{{ user.email }}</i>
+    </li>
+  </ul>
+
+  <hr>
+
+  <!-- Two-Way Binding [(ngModel)] -->
+  <h3>Add New User</h3>
+  <input type="text" placeholder="Name" [(ngModel)]="newUser.name">
+  <input type="number" placeholder="Age" [(ngModel)]="newUser.age">
+  <input type="email" placeholder="Email" [(ngModel)]="newUser.email">
+  <button (click)="addUser()">Add User</button>
+</div>
