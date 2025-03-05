@@ -1,0 +1,9 @@
+<div class="container">
+  <h1>{{ title }}</h1>
+
+  <!-- Two-way Data Binding -->
+  <input type="text" [(ngModel)]="userName" placeholder="Enter Name" />
+
+  <!-- Nested Component -->
+  <app-user-list [userName]="userName"></app-user-list>
+</div>
