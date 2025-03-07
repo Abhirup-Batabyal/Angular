@@ -1,0 +1,14 @@
+<div class="auth-container">
+  <mat-card>
+    <h2>Sign Up</h2>
+    <mat-form-field>
+      <input matInput placeholder="Email" [(ngModel)]="email">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput type="password" placeholder="Password" [(ngModel)]="password">
+    </mat-form-field>
+    <button mat-button (click)="onSignUp()">Sign Up</button>
+    <p *ngIf="successMessage">{{ successMessage }}</p>
+    <p>Already have an account? <a routerLink="/sign-in">Sign In</a></p>
+  </mat-card>
+</div>
